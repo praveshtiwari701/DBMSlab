@@ -1,0 +1,31 @@
+        ALTER TABLE candidates
+        ADD COLUMN phone VARCHAR(50);
+    
+
+       SELECT * FROM employees;
+        
+    
+      | employee_id | first_name  | last_name   | email                             | phone  |
+      +-------------+-------------+-------------+-----------------------------------+--------|
+      |         100 | Pravesh     | Tiwari      |  praveshtiwari@sqltutorial.org    |        |
+      |         101 | Roy         | Chandra     |  roychandra@sqltutorial.org       |        |
+      |         102 | Jatin       | Chai        |  jatin.chai@sqltutorial.org       |        |
+      |                                                                             |        |
+      |         104 | Rajan       | Bahl        |  rajan.bahl@sqltutorial.org       |        |
+      
+
+        
+        ALTER TABLE employees
+        DROP COLUMN email;
+        
+         SELECT * FROM employees;
+        
+
+      | employee_id | first_name  | last_name   | phone  |
+      +-------------+-------------+-------------+--------+
+      |         100 | Pravesh     |  Tiwari     |        |
+      |         101 | Roy         | Chandra     |        |
+      |         102 | Jatin       | Chai        |        |
+      |                                                  |
+      |         104 | Rajan       | Bahl        |        |
+      
